@@ -42,9 +42,9 @@
     $movie1 = new Movie("Ritorno al futuro", "Back to the Future", "en", 4, "commedy", "18-10-1985", $back_to_the_future_plot);
     $movie2 = new Movie("Il padrino", "The Godfather", "en", 4, "drama", "21-09-1972", $the_godfather_plot);
 
-    var_dump($movie1);
-    var_dump($movie1->getExcerpt());
-    var_dump($movie2);
-    var_dump($movie2->getExcerpt());
+    // var_dump($movie1);
+    // var_dump($movie1->getExcerpt());
+    // var_dump($movie2);
+    // var_dump($movie2->getExcerpt());
 
 ?>
