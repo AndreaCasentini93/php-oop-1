@@ -29,33 +29,33 @@ include_once __DIR__ . '/db/database.php';
                 <?php
                     $new_movie = new Movie($movie["title"], $movie["original_title"], $movie["original_language"], $movie["vote"], $movie["genre"], $movie["year_release"], $movie["plot"]);
                 ?>
-                <hr>
-                <ul>
-                    <li>
-                        <?= $new_movie->title; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->original_title; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->original_language; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->vote; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->genre; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->year_release; ?>
-                    </li>
-                    <li>
-                        <?= $new_movie->getExcerpt(); ?>
-                    </li>
-                    <li>
+                <div class="movie_card">
+                    <div>
+                        <p><strong>Titolo: </strong><?= $new_movie->title; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Titolo originale: </strong><?= $new_movie->original_title; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Lingua originale: </strong><?= $new_movie->original_language; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Voto: </strong><?= $new_movie->vote; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Genere: </strong><?= $new_movie->genre; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Anno d'uscita: </strong><?= $new_movie->year_release; ?></p>
+                    </div>
+                    <div>
+                        <p><strong>Trama: </strong><?= $new_movie->getExcerpt(); ?></p>
+                    </div>
+                    <div>
                         <a href="<?= $new_movie->url; ?>">Scopri di più</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <hr>
             <?php } ?>
         </main>
         <!-- /MAIN -->
