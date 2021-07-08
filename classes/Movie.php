@@ -24,7 +24,7 @@
         }
 
         // Methods
-        public function getExcerpt($charsNumber = 100) {
+        public function getExcerpt($charsNumber = 80) {
             return substr($this->plot, 0, $charsNumber) . "...";
         }
     }
