@@ -24,6 +24,6 @@
             Strada facendo incontra George (Crispin Glover), suo futuro padre, bullizzato dal compagno di classe Biff Tannen (Thomas F. Wilson), e, nel seguirlo, finisce con l'intromettersi nel suo passato. Infatti, Lorraine (Lea Thompson) si invaghisce di Marty, innescando un paradosso temporale pericolosissimo, dal momento che la ragazza è la sua futura madre.
             Una volta rintracciato Doc, lo scienziato si mette all’opera per escogitare un piano per riportare Marty “indietro” nel futuro e mette in guardia il ragazzo: dovrà necessariamente fare in modo che i suoi genitori si innamorino quella notte stessa, o verrà cancellato dalla faccia della terra."
         ]
-        ];
+    ];
 
 ?>
