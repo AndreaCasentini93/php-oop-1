@@ -1,3 +1,7 @@
+<?php
+include_once __DIR__ . '/classes/Movie.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
