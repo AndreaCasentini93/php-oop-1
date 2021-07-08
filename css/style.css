@@ -35,7 +35,7 @@ a {
     color: #ffffff;
 }
 .movie_card a {
-    font-size: 20px;
+    font-size: 15px;
     color: #D40505;
     transition: opacity .5s;
 }
