@@ -25,7 +25,38 @@ include_once __DIR__ . '/db/database.php';
 
         <!-- MAIN -->
         <main class="text-center">
-            Main
+            <?php foreach ($movies as $movie) { ?>
+                <?php
+                    $new_movie = new Movie($movie["title"], $movie["original_title"], $movie["original_language"], $movie["vote"], $movie["genre"], $movie["year_release"], $movie["plot"]);
+                ?>
+                <hr>
+                <ul>
+                    <li>
+                        <?= $new_movie->title; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->original_title; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->original_language; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->vote; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->genre; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->year_release; ?>
+                    </li>
+                    <li>
+                        <?= $new_movie->getExcerpt(); ?>
+                    </li>
+                    <li>
+                        <a href="<?= $new_movie->url; ?>">Scopri di più</a>
+                    </li>
+                </ul>
+            <?php } ?>
         </main>
         <!-- /MAIN -->
     </body>

@@ -20,11 +20,11 @@
             $this->genre = $genre;
             $this->year_release = $year_release;
             $this->plot = $plot;
-            $this->url = "/movies/" . str_replace(" ", "-", $title);
+            $this->url = "/movies/" . strtolower(str_replace(" ", "-", $title));
         }
 
         // Methods
-        public function getExcerpt($charsNumber = 60) {
+        public function getExcerpt($charsNumber = 100) {
             return substr($this->plot, 0, $charsNumber) . "...";
         }
     }
