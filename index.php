@@ -54,7 +54,7 @@ include_once __DIR__ . '/db/database.php';
                                 <p><strong>Genere: </strong><?= $new_movie->genre; ?></p>
                             </li>
                             <li>
-                                <p><strong>Anno d'uscita: </strong><?= $new_movie->year_release; ?></p>
+                                <p><strong>Anno: </strong><?= $new_movie->year_release; ?></p>
                             </li>
                             <li>
                                 <p><strong>Trama: </strong><?= $new_movie->getExcerpt(); ?></p>
