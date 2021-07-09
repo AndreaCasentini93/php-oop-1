@@ -37,30 +37,32 @@ include_once __DIR__ . '/db/database.php';
                         $new_movie = new Movie($movie["title"], $movie["original_title"], $movie["original_language"], $movie["vote"], $movie["genre"], $movie["year_release"], $movie["plot"]);
                     ?>
                     <div class="movie_card">
-                        <div>
-                            <p><strong>Titolo: </strong><?= $new_movie->title; ?></p>
-                        </div>
-                        <div>
-                            <p><strong>Titolo originale: </strong><?= $new_movie->original_title; ?></p>
-                        </div>
-                        <div>
-                            <p><strong>Lingua originale: </strong><?= $new_movie->original_language; ?></p>
-                        </div>
-                        <div>
-                            <p><strong>Voto: </strong><?= $new_movie->vote; ?> / 5</p>
-                        </div>
-                        <div>
-                            <p><strong>Genere: </strong><?= $new_movie->genre; ?></p>
-                        </div>
-                        <div>
-                            <p><strong>Anno d'uscita: </strong><?= $new_movie->year_release; ?></p>
-                        </div>
-                        <div>
-                            <p><strong>Trama: </strong><?= $new_movie->getExcerpt(); ?></p>
-                        </div>
-                        <div>
-                            <a href="<?= $new_movie->url; ?>">Scopri di più</a>
-                        </div>
+                        <ul>
+                            <li>
+                                <p><strong>Titolo: </strong><?= $new_movie->title; ?></p>
+                            </li>
+                            <li>
+                                <p><strong>Titolo originale: </strong><?= $new_movie->original_title; ?></p>
+                            </li>
+                            <li>
+                                <p><strong>Lingua originale: </strong><?= $new_movie->original_language; ?></p>
+                            </li>
+                            <li>
+                                <p><strong>Voto: </strong><?= $new_movie->vote; ?> / 5</p>
+                            </li>
+                            <li>
+                                <p><strong>Genere: </strong><?= $new_movie->genre; ?></p>
+                            </li>
+                            <li>
+                                <p><strong>Anno d'uscita: </strong><?= $new_movie->year_release; ?></p>
+                            </li>
+                            <li>
+                                <p><strong>Trama: </strong><?= $new_movie->getExcerpt(); ?></p>
+                            </li>
+                            <li>
+                                <a href="<?= $new_movie->url; ?>">Scopri di più</a>
+                            </li>
+                        </ul>
                     </div>
                 <?php } ?>
             </section>
